@@ -13,7 +13,7 @@ def jeu():
         # Demander la réponse de l'utilisateur+
         reponse = input(f"Le script propose {proposition}... +, - ou G ? ").strip().lower()
 
-        # pour rappeler les reponses possible
+        # pour rappeler les reponses possible si reponse non valide
         if reponse not in ['+', '-', 'g']:
             print("Réponse invalide. Veuillez entrer '+', '-' ou 'G'.")
             essais -= 1
